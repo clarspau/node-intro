@@ -1,6 +1,8 @@
 const fs = require('fs');
 const process = require('process');
 
+// Reads and prints the contents of a file specified by the provided path.
+
 function cat(path) {
      fs.readFile(path, 'utf8', function (err, data) {
           if (err) {
